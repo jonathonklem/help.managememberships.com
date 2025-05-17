@@ -79,15 +79,15 @@ const config = {
             items: [
               {
                 label: 'LinkedIn',
-                href: '#',
+                href: 'https://www.linkedin.com/company/managememberships',
               },
               {
                 label: 'Facebook',
-                href: '#',
+                href: 'https://www.facebook.com/managememberships',
               },
               {
                 label: 'Twitter',
-                href: '#',
+                href: 'https://x.com/ManMemberships',
               },
             ],
           },
