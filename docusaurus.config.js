@@ -69,6 +69,16 @@ const config = {
             position: 'left',
             label: 'Guide',
           },
+          {
+            to: '/faq', // 👈 This links to src/pages/faq.mdx
+            label: 'FAQ',
+            position: 'left',
+          },
+          {
+            to: '/changelog', // 👈 This links to src/pages/faq.mdx
+            label: 'Change Log',
+            position: 'left',
+          },
         ],
       },
       footer: {
