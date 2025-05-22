@@ -41,6 +41,30 @@ Includes toggleable and custom filters:
 
 ---
 
+## 🧰 Bulk Actions
+
+Admins can apply changes to multiple selected members at once using the bulk actions menu.  Bulk actions only show up after clicking a checkbox to the left of the member or in the top left to select all.
+
+![Checkboxes](/img/bulk2.png)
+![Bulk action buttons](/img/bulk1.png)
+
+
+
+### 🏷 Mark as Athlete
+Sets the `is_athlete` flag to `true` for all selected members. Useful for tagging team-based or competition-ready members in bulk.
+
+- **Location**: Bulk actions dropdown above the table.
+- **Effect**: Updates selected members in-place.
+- **Notification**: A success toast confirms how many members were updated.
+
+### ❌ Unmark as Athlete
+Clears the `is_athlete` flag for selected members.
+
+- Same flow as above.
+- Helps reverse bulk tagging operations.
+
+---
+
 ## ✅ Table Actions
 
 ### 🟩 Check In

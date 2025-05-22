@@ -4,6 +4,12 @@
  * work well for content-centric websites.
  */
 
+ .faq-item {
+  margin-bottom: 2rem;
+  background: rgb(0 0 0 / 18%);
+  padding: 1rem;
+ }
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #1e3a8a;              /* Base blue */
