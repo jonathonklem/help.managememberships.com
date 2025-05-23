@@ -81,15 +81,33 @@ Slide-over form to update core user data:
 - Membership Level
 - Active status toggle
 - Team Athlete toggle
-- Embedded components <sub>*some are only visible if 1 or more exist, i.e. if the user has no Agreements there will not be an Agreements dropdown*</sub>:
+- Embedded components<br/><sub>*some are only visible if 1 or more exist, i.e. if the user has no Agreements there will not be an Agreements dropdown*</sub>:
   - **Member Notes** 
     Allows you to record and view private notes about the member
   - **Audit Log** 
     Shows a record of changes made to the member
   - **Manage Subscriptions**
     Allows you to add, end, and pause active subscriptions on the member's account
-  - **Manage Accounts**
-    Allows you to manage sub-accounts in the instance where there are bundled members
+  - **Manage Accounts**  
+  Manage additional members linked to this primary account. There are two types:
+
+      #### 👤 Sub-Accounts (With Login Access)
+      - Treated as full members.
+      - Get their **own login**, profile, and access to the member portal.
+      - Can register for classes **independently**.
+      - Payment is handled by the **primary account holder**.
+      - Best for adult dependents, spouses, or teens with their own device.<br/><br/>
+
+      #### 👶 Bundle Accounts (Without Login)
+      - **No login or separate portal access**.
+      - Designed for minors or family members using a shared email.
+      - Can be checked in via the kiosk **under the main account’s name**.
+      - Best for young children or households managing multiple people under one email.<br/><br/>
+
+      > Sub-accounts appear in filters and reports like standard members.  
+      > Bundle accounts remain grouped under the main profile but are tracked individually for attendance and notes.<br/>
+      > **You will still need to add separate subscriptions for the bundled and sub accounts to actually start billing**
+
   - **Agreements**
     View and allow the member to sign if they haven't agreements
   - **Texts** 

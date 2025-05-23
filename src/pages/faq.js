@@ -29,6 +29,10 @@ export default function Home() {
       <FAQHeader />
       <div className={clsx(styles.innerContainer)}>
         <p>Frequently asked questions about the platform.  You can add to this list by <a href="mailto:jon@managememberships.com">Emailing a Question</a></p>
+        <h2>Accounts</h2>
+        <FaqItem question="What’s the difference between a sub-account and a bundle account?">
+          Sub-accounts have their own login and can register for classes independently. Bundle accounts are managed under the main profile — ideal for minors or shared emails — and don’t have separate logins.
+        </FaqItem>
         <h2>Billing</h2>
         <FaqItem question="When are my members charged?">
           Members are charged immediately upon signup (if they choose a paid membership) and then on the same day each month thereafter. For example, if a member signs up on the 15th of the month, they will be charged on the 15th of each subsequent month.

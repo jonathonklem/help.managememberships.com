@@ -53,7 +53,12 @@ const config = {
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+    ({ 
+      algolia: {
+        appId: '93ROKAFR6E',
+        apiKey: '62c1a1f61ea38840160cc6271da06fcb',
+        indexName: 'help-managememberships',
+      },
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
