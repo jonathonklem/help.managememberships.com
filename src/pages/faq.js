@@ -30,6 +30,19 @@ export default function Home() {
       <div className={clsx(styles.innerContainer)}>
         <p>Frequently asked questions about the platform.  You can add to this list by <a href="mailto:jon@managememberships.com">Emailing a Question</a></p>
         <h2>Accounts</h2>
+        <FaqItem question="How do I add sub/family accounts?">
+          <ul>
+            <li>If they are going to require their own login, such as an adult dependent or someone in the house with their own email, a sub account is the best fit</li>
+            <li>If they are going to be a minor or someone who will not require their own login, such as a spouse or child, a bundle account is the best fit</li>
+          </ul>
+          <ol>
+            <li>Navigate to Membership &rarr; Members</li>
+            <li>Find the member and click 'manage'</li>
+            <li>Scroll down to 'Manage Accounts'</li>
+            <li>Add the bundle account or the sub account depending on the situation</li>
+            <li>If this additional member should incur an additional monthly fee, you will have to navigate to "Manage Subscriptions" and add the appropriate subscription</li>
+          </ol>
+        </FaqItem>
         <FaqItem question="What’s the difference between a sub-account and a bundle account?">
           Sub-accounts have their own login and can register for classes independently. Bundle accounts are managed under the main profile — ideal for minors or shared emails — and don’t have separate logins.
         </FaqItem>
