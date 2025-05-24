@@ -6,70 +6,117 @@ sidebar_position: 1
 
 ## Getting Started
 
-Get started by **configuring your portal settings**.  Start by navigating to settings -> portal settings.
+To get started, navigate to **Settings → Portal Settings** in your admin dashboard.  
 
-**IMPORTANT: Your website will not load until you've completed this step**
+> ⚠️ **Important:** Your portal will not function correctly until these settings are configured.
 
-## Main Portal Configurations
+---
 
-### Name
+## Communication and Portal Settings
 
-This is the name that will be displayed prominently on your portal (which will be located at https://your-choice.managememberships.com)
+Settings related to the visual and communication aspects of your member-facing portal.
+
+### Website Name
+
+Displayed at the top of your portal and used for internal references.
+
+### Hero Image
+
+A banner image that appears at the top of your portal for guests.
+
+### Description
+
+This message is shown to **non-logged-in visitors** on your portal homepage.
+
+### Welcome Message
+
+Shown to members **after logging in**.
+
+### Welcome Email
+
+Sent to new members **after they complete registration**.
+
+---
+
+## Membership Settings
+
+Configuration for payment processing and membership enforcement.
 
 ### Timezone
 
-This is used for controlling the door open times if you're using the access control module, check in times, and events and classes
+Used for scheduling classes, access control logic, and system time coordination.
 
-### Minimum age
+### Hide Cancel
 
-This will set a minimum age across-the-board for users registering to on your site.  You will also have to make sure that 'require birthdate' is checked or else there will be no birthday form on the website.
+If enabled, members must **contact you** directly to cancel their subscriptions.
 
-### Require picture
+### Split Fees
 
-Check this to make it so that members will have to upload a picture to register.  This is often useful for gyms that have 24 hour access because when it's integrated with the camera system you can identify possible tail gaters or sharing of access
+When checked, a **small processing surcharge** is added to member payments to share Stripe fees with them.
 
-### Hide cancel
+### Stripe Tax ID
 
-This option will make it so that members will have to contact you to cancel their accounts/plans
+If your jurisdiction requires tax collection, enter your Stripe-provided tax ID here.
 
-### Split fees
+### Failed Billings Before Inactive
 
-If you check this option, a surcharge will be added to member's fees to help cover the cost of processing
+How many failed billing attempts will occur before a member is automatically marked **inactive**.
 
-### Stripe tax ID
+### Logo
 
-If you are in a jurisdiction that requires sales tax on gym memberships, we will help you set this to the correct value
+The logo displayed throughout your portal (square image recommended).
 
-### Failed billings before inactive
+---
 
-This is the number of times for billing to fail before the member is marked as inactive
+## Member Info
 
-## Email information
+Settings related to registration requirements and birthday notification automation.
 
-### Additional payment notification emails
+### Minimum Age
 
-If you have a staff member that handles payments and member outreach, set this email to have them also be alerted if a payment fails
+Sets a minimum allowed age for registration.  
+> **Note:** "Require Birthdate" must be enabled for this to apply.
 
-### Send from name
+### Require Birthdate
 
-This will be the name that all the system generated emails will show up as being 'from'
+If checked, members will be required to enter their birthdate during sign-up.
 
-### Send from email
+### Require Picture
 
-This will be the email that all the system generated emails will show up as being from.  This will require you to confirm an email address.
+When enabled, members must upload a photo at registration.  
+> Especially useful for security or gym environments with 24/7 access.
 
-### Email template
+### Send Birthday Reminder
 
-Use this setting to pre-fill email campaign messages with a header or other branding
+Sends an email to you **7 days** and **1 day** before each member's birthday.  
+> The reminder includes member names, emails, and days remaining.
 
-## Hero
-This is the image that will display at the top of your portal
+### Additional Birthday Email Reminder
 
-## Description
-This will be displayed to visitors that are not logged in when visiting your portal
+Comma-separated list of **other emails** that should receive birthday reminders.  
+> Example: `staff@example.com, manager@example.com`
 
-## Welcome message
-This is the message that will be displayed after visitors log in
+---
 
-## Welcome email
-This is the email that will go out to members after signing up
+## Email Information
+
+Used to manage email templates and additional notification recipients.
+
+### Additional Payment Notification Emails
+
+A list of staff emails to alert when a member's payment fails.
+
+### Send From Name
+
+This name will appear in the **"From" field** of all system-generated emails.
+
+### Send From Email
+
+The email address used for outgoing messages.  
+> Must be a valid, verified address.  
+> **Cannot** be a `@managememberships.com` email.
+
+### Email Template
+
+Reusable content (such as headers or footers) for pre-filling email campaigns.
+
