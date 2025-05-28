@@ -148,6 +148,7 @@ Membership levels define the structure of your offerings, including pricing, bil
 
 #### **Multi-Member**
 - Enables charging for **multiple people under one plan** (e.g., family plan).
+- They will be billed for the monthly amount * the number of members.  e.g. 3x$30/mo would be $90/mo
 - Adds these fields:
   - **Minimum Additional Members** – Minimum number of extra members.
   - **Maximum Additional Members** – Cap on how many can be added.

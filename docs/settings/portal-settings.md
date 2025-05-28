@@ -62,6 +62,10 @@ If your jurisdiction requires tax collection, enter your Stripe-provided tax ID 
 
 How many failed billing attempts will occur before a member is automatically marked **inactive**.
 
+### Send payment failed notification
+
+Toggles whether or not to send an email to members when their payment fails asking them to update their payment method.  Default is **on**
+
 ### Logo
 
 The logo displayed throughout your portal (square image recommended).
