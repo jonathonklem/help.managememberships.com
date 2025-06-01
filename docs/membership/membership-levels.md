@@ -113,6 +113,7 @@ Membership levels define the structure of your offerings, including pricing, bil
 - Each option includes:
   - Billing interval (e.g., yearly)
   - Price in USD
+  - Promotional text (optional, e.g. : 1 month free)
 - Great for encouraging **longer commitments with discounts**.
 
 ---

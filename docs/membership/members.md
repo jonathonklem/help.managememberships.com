@@ -87,7 +87,48 @@ Slide-over form to update core user data:
   - **Audit Log** 
     Shows a record of changes made to the member
   - **Manage Subscriptions**
-    Allows you to add, end, and pause active subscriptions on the member's account
+    Allows you to add, end, and pause active subscriptions on the member's account. You can also add recurring add-ons like locker rentals and charge prorated amounts immediately.
+
+      #### 📦 Current Subscriptions
+
+      Each subscription entry shows:
+
+      - **Membership**: The base plan name
+      - **Start/End Dates**: When the subscription began and ends
+      - **Status**: Stripe billing status (active, incomplete, etc.)
+      - **Cancel**: Allows you to end the main subscription
+
+      Beneath each subscription, you’ll see a breakdown of attached items. This can include:
+
+      - Membership-level plans
+      - Add-ons like locker rentals, towel service, or coaching fees
+      - The quantity for each item (e.g. 2x coaching blocks)<br/><br/>
+      #### ➕ Add Recurring Items
+
+      Admins can attach new recurring items (Stripe prices) to an existing subscription using the **“Add Item to Subscription”** form under each plan.
+
+      - Select from available membership-level products
+      - Set the quantity (usually `1`)
+      - Click “Add” to attach it to the subscription<br/><br/>
+
+      #### ⚡ Prorated Charges
+
+      When you add a new item, the system will:
+
+      1. Update the existing subscription
+      2. Trigger a **prorated invoice** based on the time left in the current billing cycle
+      3. **Immediately finalize and charge the invoice**<br/><br/>
+
+      > If a $5/mo locker rental is added halfway through the month, the system will charge $2.50 immediately, and the full $5 will be added to the next monthly bill.
+
+      This ensures members pay for what they use **now**, without waiting for the next renewal.
+
+      #### 🧹 Removing Subscription Items
+
+      You can remove individual add-ons (like locker rentals) from the subscription. When removed, the member is no longer billed for that item starting immediately, and any applicable **refunds or credits** will be handled via Stripe's proration logic.
+
+      > 💡 Removing the **main subscription item** is not allowed via this menu. Use the “End” button in the main subscription row instead.
+
   - **Manage Accounts**  
   Manage additional members linked to this primary account. There are two types:
 

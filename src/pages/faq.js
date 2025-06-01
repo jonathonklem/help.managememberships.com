@@ -43,6 +43,9 @@ export default function Home() {
             <li>If this additional member should incur an additional monthly fee, you will have to navigate to "Manage Subscriptions" and add the appropriate subscription</li>
           </ol>
         </FaqItem>
+        <FaqItem question="Can I charge members for add-ons?">
+          If it's a monthly fee such as locker rental, you can create the locker rental as a membership level and <a href="/docs/membership/membership-levels#-visibility-options">make it not visible publicly</a>.  After that, you can add it as an additional subscription <a href="/docs/membership/members#-manage-edit">in their member profile</a>.
+        </FaqItem>
         <FaqItem question="What’s the difference between a sub-account and a bundle account?">
           Sub-accounts have their own login and can register for classes independently. Bundle accounts are managed under the main profile — ideal for minors or shared emails — and don’t have separate logins.
         </FaqItem>
