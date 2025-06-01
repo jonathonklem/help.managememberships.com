@@ -92,6 +92,11 @@ Membership levels define the structure of your offerings, including pricing, bil
 
 ---
 
+#### **Associated Agreements**
+- Specify which agreements must be signed for this membership level.  You will see a warning if there are no agreements.
+
+---
+
 #### **Min/Max Age**
 - Optional fields to restrict who can purchase this membership.
 - Must have birthday collection enabled in portal settings to work.
