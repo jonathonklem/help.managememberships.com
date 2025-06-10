@@ -191,7 +191,7 @@ These fields will show up on the member form and can be referenced in exports or
 
 ## 🔀 Reordering Membership Levels
 
-You can **drag and drop** membership levels in the table to reorder them. The order is saved via the `sort_order` column and affects how levels are displayed in dropdowns or public listings.
+To reorder how resources appear (e.g., in dropdowns or booking interfaces), click the **up/down arrow icon** in the top-left corner of the table, then **drag and drop** the rows into your preferred sequence. When done, **click the checkbox** to save the new order.
 
 ---
 

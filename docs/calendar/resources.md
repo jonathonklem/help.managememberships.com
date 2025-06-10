@@ -10,7 +10,10 @@ The **Resources** section allows you to define and manage rentable or schedulabl
 
 ## 📊 Overview Table
 
-The table shows all resource entries configured for your subdomain.
+The table shows all resource entries configured for your subdomain. You can:
+
+- **Sort** by name, price, days available, and active status
+- **Reorder** resources using drag-and-drop to customize their display order
 
 | Column            | Description |
 |-------------------|-------------|
@@ -85,7 +88,7 @@ Click **"Create"** to open the resource editor panel.
 
 ---
 
-## 📝 Editing a Resource
+## 📝 Editing & Reordering
 
 Click the **edit icon** on any row to update that resource. All changes are live once saved.
 
@@ -96,9 +99,13 @@ You can adjust:
 - Membership rules
 - Description and attachments
 
+To reorder how resources appear (e.g., in dropdowns or booking interfaces), click the **up/down arrow icon** in the top-left corner of the table, then **drag and drop** the rows into your preferred sequence. When done, **click the checkbox** to save the new order.
+
+
 ---
 
 ## ✅ Best Practices
 
 - Use **Unavailable Dates** to block off days for maintenance or events.
 - Attach **trainers** only if the resource requires supervision.
+- Reorder resources to prioritize the most-used ones at the top.

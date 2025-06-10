@@ -154,7 +154,7 @@ Slide-over form to update core user data:
   - **Texts** 
     Shows text messages sent to the member
   - **Emails**
-    Displays emails that you have sent to the member
+    Displays emails that you have sent to the member, you can also send emails directly to individual members from here.
   - **Contact Information**
     Displays phone and address
   - **Check Ins**
