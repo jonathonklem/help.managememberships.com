@@ -154,7 +154,16 @@ Slide-over form to update core user data:
   - **Texts** 
     Shows text messages sent to the member
   - **Emails**
-    Displays emails that you have sent to the member, you can also send emails directly to individual members from here.
+    Displays emails that you have sent to the member, you can also send emails directly to individual members from here.  Clicking a subject will reveal the full sent message.
+  - **Invoices**
+    Lists recent invoices for the member’s connected account. Each entry shows:
+      - **Date** the invoice was created
+      - **Status** (paid, open, uncollectible, etc.)
+      - **Amount Paid** or amount due
+      - **PDF** link to the original invoice
+      - If the invoice is **open** or **unpaid**, admins can click a **“Pay Now”** button to charge the member using their default payment method.  Admins can also **"Mark Paid"** which will mark the invoice as paid out of band, set the customer to active if they were inactive and move the next payment to the next period.
+  - **Payment Methods**
+    Lists payment methods.  You can also add a new payment method and change the default payment method from here.
   - **Contact Information**
     Displays phone and address
   - **Check Ins**
