@@ -13,7 +13,8 @@ This component allows owners to manage all active and inactive members, includin
 | Column                | Description                                                                 |
 |-----------------------|-----------------------------------------------------------------------------|
 | **Profile Pic**       | Shows the member's profile photo. Hidden by default to save space.         |
-| **Name**              | Full name of the member. Searchable and sortable.                          |
+| **Name**              | Full name of the member. If bundle accounts exist, their names will appear below as a list. Searchable and sortable. |
+| **Bundled Members**   | Hidden column used only for search. Allows admins to search by names of bundled members. |
 | **Cash Member**       | Shows "Yes" if the member is manually managed (not subscribed online).     |
 | **Email**             | Member's email address. Hidden by default.                                 |
 | **Membership**        | Displays the membership level's name.                                      |
@@ -22,6 +23,7 @@ This component allows owners to manage all active and inactive members, includin
 | **Signed All**        | A boolean column showing whether all required agreements are signed.       |
 | **Renewal Date**      | Shows when the subscription is due to renew, using a friendly label.       |
 | **Joined**            | Shows how long ago the member joined, with tooltip for the exact date.     |
+
 
 ---
 
@@ -62,6 +64,21 @@ Clears the `is_athlete` flag for selected members.
 
 - Same flow as above.
 - Helps reverse bulk tagging operations.
+
+### ✅ Mark as Active
+
+Sets the `is_active` flag to `true` for all selected members. Useful for quickly re-enabling accounts or marking members as active in bulk after a pause or reactivation event.
+
+- **Location**: Bulk actions dropdown above the table.
+- **Effect**: Updates selected members immediately.
+- **Notification**: A success toast confirms how many members were updated.
+
+### 🚫 Mark as Inactive
+
+Sets the `is_active` flag to `false` for all selected members. Useful for pausing accounts in bulk when members leave, take a break, or need access suspended without deleting them.
+
+- Same flow as above.
+- Helps with bulk membership cleanup and management.
 
 ---
 

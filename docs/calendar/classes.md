@@ -41,6 +41,9 @@ Click the **"Create"** button to open the class editor. This will open a side pa
 
 #### **Start & End Date**
 - Controls the window of availability. Leave **end date** blank if the class is ongoing.
+- If you only want the class to show up on specific days (e.g., a summer seminar on 07/04, 07/11, and 07/18), use the **Additional Class Dates** field (see below).
+- **Important:** 
+  If this class is only intended to appear once, it is recommended to set the **end date to the day after**, and use **Days** to limit which single day within that range is used.
 
 #### **Start & End Time**
 - Set the time of day the class occurs or is bookable.
@@ -72,6 +75,14 @@ If unchecked:
 
 #### **Days**
 - Select the days of the week this class can occur. Multiple days supported.
+- This field is used to repeat classes on a weekly schedule (e.g., every Monday and Thursday).
+
+#### **Additional Class Dates**
+- Use this to schedule specific class dates that don’t follow a weekly pattern.
+- Perfect for short-term workshops or series (e.g., a 4-class course running every Wednesday in July).
+- These dates are treated as valid class days even if they aren’t included in the **Days** field.
+- Helpful for structuring special offerings, holiday sessions, or limited-run programs.
+
 
 #### **Agreements**
 - Select which waivers (if any) must be signed to register for this class.
@@ -104,10 +115,22 @@ Click the **edit icon** to update any part of the class. Changes will reflect im
 
 ---
 
+## 📋 Duplicating a Class
+
+Click the **"Duplicate"** action from the class table to quickly create a copy of an existing class. The duplicated version:
+- Copies all fields including name, schedule, trainers, and membership settings
+- Appends **"(copy)"** to the class name
+- Is set to **inactive** by default so you can safely make adjustments before making it live
+
+Use this feature to easily reuse common formats or seasonal class templates without starting from scratch.
+
+---
+
 ## ✅ Best Practices
 
 - For regular group classes, keep **fixed time** enabled.
 - For flexible appointments, define trainers and duration.
 - Always check which membership levels are eligible.
 - Hide inactive or seasonal classes using the **Active** toggle or **Hide from Calendar** option.
-- Use **questions** to capture custom info like goals, preferences, or medical disclosures.
+- Use **Additional Class Dates** for irregular events like seminars or workshops.
+- Avoid setting the **same start and end date** unless you're also selecting a day in **Days** — this can prevent the class from showing on the calendar.

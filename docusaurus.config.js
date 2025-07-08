@@ -13,9 +13,9 @@ const config = {
   title: 'ManageMemberships Knowledge Base',
   tagline: '',
   favicon: 'img/favicon.ico',
-
+  trailingSlash: false,
   // Set the production url of your site here
-  url: 'https://managememberships.com',
+  url: 'https://help.managememberships.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',

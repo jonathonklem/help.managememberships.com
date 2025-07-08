@@ -71,11 +71,11 @@ Each blog post in the table view shows:
 
 Once enabled, your blog is available at:
 
-> https://your-subdomain.managememberships.com/blog
+> `your-subdomain.managememberships.com/blog`
 
 Individual posts live at:
 
-> https://your-subdomain.managememberships.com/blog/{slug}
+> `your-subdomain.managememberships.com/blog/{slug}`
 
 
 ---

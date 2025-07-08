@@ -4,7 +4,7 @@ sidebar_position: 7
 
 # Kiosk
 
-The kiosk is a self-check-in screen used by members to register for classes and mark attendance quickly. It can be used by individual members or bundle (family) accounts.
+The kiosk is a self-check-in screen used by members to register for classes and mark attendance quickly. It can be used by individual members or bundle (family) accounts.  It is always located at yourdomain.managememberships.com/kiosk 
 
 ---
 

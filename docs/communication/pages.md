@@ -12,11 +12,11 @@ The Pages tool allows you to create and manage fully custom content pages on you
 
 Each page is available at:
 
-> https://your-subdomain.managememberships.com/{slug}
+> `your-subdomain.managememberships.com/{slug}`
 
 For example, a page with the slug `about` will be live at:
 
-> https://your-subdomain.managememberships.com/about
+> `your-subdomain.managememberships.com/about`
 
 You can use these pages for content like gym policies, FAQs, staff bios, or event promotions.
 

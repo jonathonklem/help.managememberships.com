@@ -36,6 +36,11 @@ Shown to members **after logging in**.
 
 Sent to new members **after they complete registration**.
 
+### Closed Dates
+
+Allows you to block specific days on the calendar system-wide (such as holidays or planned outages).  
+> Members will not be able to register or check in on these dates.
+
 ---
 
 ## Membership Settings
@@ -123,4 +128,3 @@ The email address used for outgoing messages.
 ### Email Template
 
 Reusable content (such as headers or footers) for pre-filling email campaigns.
-

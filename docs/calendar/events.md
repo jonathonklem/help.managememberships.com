@@ -76,7 +76,7 @@ Use **"Add Pricing Option"** to define tiers. Each tier can also include multipl
 ## 👁️ Visibility
 
 #### **Public Link**
-- After creation, a link will be shown (e.g., `https://yoursubdomain.managememberships.com/events/sample-event`) for public sharing.
+- After creation, a link will be shown (e.g., `yoursubdomain.managememberships.com/events/sample-event`) for public sharing.
 
 #### **Hide from Calendar**
 - Toggle this to remove the event from public event calendars.
@@ -92,6 +92,19 @@ Click the **edit icon** to update:
 - Agreements or visibility options
 
 Changes are saved in real time and reflected in the public portal if visible.
+
+---
+
+## 📄 Duplicating an Event
+
+To quickly reuse a past event, use the **duplicate** icon next to any event in the table.
+
+- A new event will be created with the same name, settings, pricing, and restrictions
+- The **event name** will have “(Copy)” added
+- The **slug** will automatically append `-1`, `-2`, etc., to avoid conflicts with existing events
+- The **start and end dates** will be shifted forward by **1 week**
+
+This is useful for recurring events like seminars, tournaments, or seasonal workshops.
 
 ---
 
