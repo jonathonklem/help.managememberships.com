@@ -4,124 +4,91 @@ sidebar_position: 1
 
 # Events
 
-The **Events** section allows you to create, manage, and track special events or one-time offerings such as seminars, workshops, or tournaments. Events can include multiple pricing options, membership restrictions, registration limits, and more.
+The **Events** section allows you to create, manage, and register for special events such as seminars, workshops, or tournaments. You can now register through your account or be directed to an external site if the event uses an outside registration process.
 
 ---
 
-## 📊 Overview Table
+## 📊 Event Table
 
-The event table lists all scheduled events for your subdomain.
+The table shows all events for your location.
 
 | Column            | Description |
-|------------------|-------------|
-| **Name**         | The event title. |
-| **Registrations**| Number of current registrations. |
-| **Start Date**   | The scheduled date the event begins. |
+|-------------------|-------------|
+| **Name**          | The event title. |
+| **Registrations** | Current number of signups. |
+| **Start Date**    | When the event begins. |
 
-Use the column sort or search bar to find a specific event or sort by upcoming dates.
-
----
-
-## ➕ Creating a New Event
-
-Click the **"Create"** button to open the event editor. This will slide out a panel with all configurable fields.
-
-### 📅 Required Fields
-
-#### **Name**
-- The event name. This will automatically generate a public link slug.
-
-#### **Picture**
-- Upload a banner or image associated with the event. Required.
-
-#### **Description**
-- Full event details shown to the user during signup. Supports rich text and file attachments.
-
-#### **Start & End Date**
-- Defines the active period of the event. Must be between today and 2 years from now.
-
-#### **Start & End Time**
-- Defines the time window on each event day.
+You can sort or search to find a specific event or upcoming dates.
 
 ---
 
-### 🔹 Optional Configuration
+## ➕ Registering for an Event
 
-#### **Max Participants**
-- Set a cap for the number of registrants. Leave blank for unlimited.
+Click on the event you want to attend to view its details.
 
-#### **Agreements**
-- Choose which waivers or forms (if any) must be signed before someone can register.
+### 📅 Event Page
 
-#### **Custom Questions**
-- Add additional questions to be asked during registration. Can be marked as required.
+You will see:
 
----
+- The event image and description
+- Any questions you need to answer before registering
+- Available ticket types and prices
 
-## 💸 Pricing Options
-
-Each event can support multiple pricing options.
-
-| Field                      | Description |
-|----------------------------|-------------|
-| **Name**                   | Label for the pricing tier (e.g., Early Bird, General). |
-| **Price**                  | Cost of this pricing option. Minimum: $15. |
-| **Eligible Membership Levels** | Only members with these levels can see or register at this price. |
-| **Membership Discounts**   | Offer percentage discounts to specific membership levels. |
-
-Use **"Add Pricing Option"** to define tiers. Each tier can also include multiple discounts.
+If the event uses an **external registration**, you will see a button to continue registration on another site. Use this button to complete your signup.
 
 ---
 
-## 👁️ Visibility
+## 💳 Payment and Ticket Options
 
-#### **Public Link**
-- After creation, a link will be shown (e.g., `yoursubdomain.managememberships.com/events/sample-event`) for public sharing.
+If the event uses the built-in registration:
 
-#### **Hide from Calendar**
-- Toggle this to remove the event from public event calendars.
+- You will see a list of ticket options with prices.
+- Select the number of tickets you want to purchase.
+- If there is a limit on tickets, it will display the number still available.
+- You may see a processing fee or tax displayed if applicable.
+- You can choose to bill your card on file or enter a new card.
 
----
+If you are registering for others, each guest will need to sign a waiver before attending.
 
-## 📝 Editing an Event
-
-Click the **edit icon** to update:
-- Name, image, description
-- Date/time
-- Pricing tiers and restrictions
-- Agreements or visibility options
-
-Changes are saved in real time and reflected in the public portal if visible.
+Your total will update automatically based on the ticket type and number of tickets selected.
 
 ---
 
-## 📄 Duplicating an Event
+## ✅ Registration Confirmation
 
-To quickly reuse a past event, use the **duplicate** icon next to any event in the table.
+Once you complete payment or registration, your account will show that you are registered. You will not need to register again for the same event.
 
-- A new event will be created with the same name, settings, pricing, and restrictions
-- The **event name** will have “(Copy)” added
-- The **slug** will automatically append `-1`, `-2`, etc., to avoid conflicts with existing events
-- The **start and end dates** will be shifted forward by **1 week**
-
-This is useful for recurring events like seminars, tournaments, or seasonal workshops.
+If you use the external registration button, complete your signup on the linked page to secure your spot.
 
 ---
 
-## 🚫 Deleting an Event
+## 📝 Editing or Canceling
 
-Events can only be deleted if **no members have registered**. If registrations exist:
-- A warning will appear:  
-  > "Can not delete event with registrations"
-
-To remove an active event from public view without deleting:
-- Toggle **"Hide from Calendar"** or edit the start date to the past.
+- To update your registration details, return to the event page and check your options.
+- To cancel, please contact your location directly if you need to change or cancel your registration.
 
 ---
 
-## ✅ Best Practices
+## 🚩 Troubleshooting
 
-- Use pricing tiers to support early bird or member-specific pricing.
-- Include detailed descriptions and attachments if your event needs documentation.
-- Link agreements to ensure members sign necessary waivers.
-- You can hide private events so they don't show up on the calendar.
+- If you cannot select tickets, the event may be full or closed.
+- If you cannot see payment options, check that you are logged in with the correct account.
+- If redirected to an outside site, you must complete the registration on that page for your spot to be confirmed.
+
+---
+
+## 🙌 Tips for Event Registration
+
+- Register early if you want to secure your spot for popular events.
+- Use your account to track all your upcoming events in one place.
+- Look for the **external registration button** when needed and follow the instructions provided.
+
+---
+
+This ensures your users understand:
+
+- The difference between internal and external registration.
+- How payment, waivers, and tickets work.
+- What to expect when clicking the external registration button.
+
+Let me know if you want a matching callout banner or a “common questions” section for this page next for your docs consistency.

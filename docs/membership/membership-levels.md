@@ -111,6 +111,13 @@ Membership levels define the structure of your offerings, including pricing, bil
 
 ---
 
+#### **Max Billing Cycles**
+- Optional field that limits how many times the member is billed.
+- Example: if set to `6` on a $30/month plan, the member will be billed **$30 monthly for 6 months**, then the subscription will **automatically cancel**.
+- Useful for limited-term memberships without requiring manual cancellation.
+
+---
+
 ### 💲 Additional Pricing Options
 
 #### **Additional Price Options**
@@ -135,6 +142,9 @@ Membership levels define the structure of your offerings, including pricing, bil
 - Indicates whether this membership auto-renews (i.e., subscription).
 - If disabled, you can set:
   - **Expiration Days** – How long the membership lasts before expiring.
+  - **Number of Check-ins** *(fixed-term only)* – Sets a fixed allowance of check-ins for the membership.  
+    - This number is added to the member’s **check-in quota** and is deducted when registering them for classes.
+    - Useful for packages like private training or limited-session programs where the membership is not time-based but usage-based.
 
 ---
 
@@ -186,7 +196,6 @@ These fields will show up on the member form and can be referenced in exports or
 - If legally required, enable **Annual Renewal** to keep signed agreements up to date.
 - Consider **bundling** only where it simplifies the purchasing experience for your members.
 
-
 ---
 
 ## 🔀 Reordering Membership Levels
@@ -200,4 +209,3 @@ To reorder how resources appear (e.g., in dropdowns or booking interfaces), clic
 - Keep membership names clear and recognizable (e.g., "Adult Monthly", "Family Annual").
 - Use the **active toggle** to hide legacy plans without deleting them.
 - Always associate an agreement template with each membership (see [Agreement Templates](./agreements/)).
-

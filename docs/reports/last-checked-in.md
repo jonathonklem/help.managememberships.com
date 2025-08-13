@@ -9,19 +9,30 @@ You can view which members haven’t checked in since a specific date using the 
 ## 📆 How to Use
 
 1. Select a **cutoff date** using the date picker at the top.
-2. Click **Generate** to load results.
-3. The table will show:
+2. Optionally select one or more **Membership Levels** to filter the results.
+3. Click **Generate** to load results.
+4. You’ll see a list showing:
    - **Member Name**
    - **Email**
+   - **Membership Level**
    - **Last Check-in Date** (or "Never" if they’ve never checked in)
+
+## ✅ Email Campaign Feature
+
+Each row now includes a **checkbox** so you can quickly select specific members. Once you’ve made your selections, you can choose to start an **Email Campaign**.
+
+- The campaign is **pre-scheduled one year into the future**.
+- This gives you a chance to **review and customize** the message and send date before it goes out.
+- You’ll be redirected to the **draft campaign editor** where you can update the subject, body, recipients, and schedule.
 
 ## 🧮 What It Does
 
-- Looks at all active users in your gym.
-- Finds those who **haven’t checked in** since the selected date.
-- Includes members who have **never checked in at all**.
+- Scans all active users from your system.
+- Identifies those who **haven’t checked in** since the selected cutoff.
+- Includes users who have **never checked in**.
 
 ## 📝 Notes
 
-- This is useful for identifying inactive members or those at risk of churn.
-- Dates are based on actual check-ins in your system.
+- Helpful for spotting inactive members or identifying those at risk of cancellation.
+- If you use membership levels (like Standard, VIP, etc.), filtering lets you target specific groups more precisely.
+- Dates are based on check-in logs in your system.
