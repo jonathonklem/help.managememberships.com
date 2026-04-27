@@ -8,7 +8,7 @@ This report helps you see which members are subscribed to a specific **membershi
 
 ## 🔍 How to Use
 
-1. Use the dropdown at the top to select a **membership level**.
+1. Use the dropdown at the top to **Select Membership Levels** (multiple allowed).
 2. The table will automatically refresh with a list of members who have that level.
 3. For each user, you'll see:
    - **User name**

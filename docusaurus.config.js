@@ -107,7 +107,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} ManageMemberships.`,
+        copyright: `Copyright © ${new Date().getFullYear()} ManageMemberships. Last updated April 27, 2026.`,
       },
       prism: {
         theme: prismThemes.github,

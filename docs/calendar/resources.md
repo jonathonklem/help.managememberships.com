@@ -10,7 +10,7 @@ The **Resources** section allows you to define and manage rentable or schedulabl
 
 ## 📊 Overview Table
 
-The table shows all resource entries configured for your subdomain. You can:
+The table shows all resource entries configured for your business. You can:
 
 - **Sort** by name, price, days available, and active status
 - **Reorder** resources using drag-and-drop to customize their display order
@@ -20,13 +20,14 @@ The table shows all resource entries configured for your subdomain. You can:
 | **Name**          | Resource name (e.g., Private Room A, Ice Bath). |
 | **Price**         | Cost per reservation. |
 | **Days Available**| Days the resource is offered. |
-| **Active**        | Indicates whether the resource is enabled and visible. |
+| **Is Active**     | Indicates whether the resource is enabled and visible. |
+| **Hidden from Calendar** | Whether the resource is hidden from the public calendar. |
 
 ---
 
 ## ➕ Creating a New Resource
 
-Click **"Create"** to open the resource editor panel.
+Click **"New Resource"** to open the resource editor panel.
 
 ### 📅 Required Fields
 
@@ -109,3 +110,9 @@ To reorder how resources appear (e.g., in dropdowns or booking interfaces), clic
 - Use **Unavailable Dates** to block off days for maintenance or events.
 - Attach **trainers** only if the resource requires supervision.
 - Reorder resources to prioritize the most-used ones at the top.
+
+---
+
+## Public View Link
+
+When editing a resource, a **Public View Link** is displayed showing the direct URL to this resource's public booking page. This link can be shared with members or embedded on your website.

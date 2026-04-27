@@ -4,122 +4,348 @@ sidebar_position: 1
 
 # Members
 
-This component allows owners to manage all active and inactive members, including filtering by subscription status, agreement completion, and membership level. Admins can perform check-ins, edit member data, track notes and audit logs, and review renewal statuses for billing management.
+This comprehensive member management system allows owners to handle all aspects of member accounts, from basic information to advanced billing features. Manage active and inactive members with powerful filtering, bulk actions, and detailed member profiles.
+
+:::tip Quick Start
+Use the search bar to quickly find members by name, email, or bundled member names. Apply filters to focus on specific member groups that need attention.
+:::
+
+---
+
+## 📊 Overview Dashboard
+
+The member overview provides at-a-glance insights into your membership base:
+
+- **Total Active Members** - Current active subscription count
+- **Payment Issues** - Members with failed payments requiring attention  
+- **Pending Renewals** - Upcoming billing dates within the next 7 days
+- **Agreement Status** - Members missing required agreement signatures
 
 ---
 
 ## 📋 Table Columns
 
-| Column                | Description                                                                 |
-|-----------------------|-----------------------------------------------------------------------------|
-| **Profile Pic**       | Shows the member's profile photo. Hidden by default to save space.         |
-| **Name**              | Full name of the member. If bundle accounts exist, their names will appear below as a list. Searchable and sortable. |
-| **Bundled Members**   | Hidden column used only for search. Allows admins to search by names of bundled members. |
-| **Cash Member**       | Shows "Yes" if the member is manually managed (not subscribed online).     |
-| **Email**             | Member's email address. Hidden by default.                                 |
-| **Membership**        | Displays the membership level's name.                                      |
-| **Subscription Status** | Interprets current status from the subscription record: Active, Expired, Cash, etc. |
-| **Account Active**    | A toggle indicating if the account is active or suspended.                 |
-| **Signed All**        | A boolean column showing whether all required agreements are signed.       |
-| **Renewal Date**      | Shows the next renewal date for active members or the last billing date for failed payments, ensuring admins can track expected billing accurately. |
-| **Renewal Status**    | Displays a clear status: "good", "paused", or "failed", allowing quick filtering and review of members needing billing attention. |
-| **Joined**            | Shows how long ago the member joined, with tooltip for the exact date.     |
+| Column | Description | Default Visibility |
+|--------|-------------|-------------------|
+| 🖼️ **Profile Pic** | Member's profile photo | Hidden (saves space) |
+| 👤 **Name** | Full name + bundled members listed below | ✅ Visible |
+| 📦 **Bundled Members** | Hidden searchable column for bundle member names | Hidden |
+| 💵 **Cash Member** | "Yes" for manually managed (non-subscription) members | ✅ Visible |
+| 📧 **Email** | Member's email address | Hidden |
+| 🏷️ **Membership** | Current membership level name | ✅ Visible |
+| 📈 **Subscription Status** | Active, Expired, Paused, Failed, Cash, etc. | ✅ Visible |
+| ⚡ **Account Active** | Toggle for account activation status | ✅ Visible |
+| ✍️ **Signed All** | Boolean showing if all agreements are complete | ✅ Visible |
+| 📅 **Renewal Date** | Next billing date or last successful payment date | ✅ Visible |
+| 📋 **Renewal Details** | Detailed renewal information with billing context | Hidden |
+| 🔄 **Renewal Status** | `good`, `paused`, or `failed` status indicator | ✅ Visible |
+| 📊 **Joined** | Time since joining (hover for exact date) | ✅ Visible |
 
 ---
 
-## 🔍 Filters
+## 🔍 Advanced Filtering System
 
-Includes toggleable and advanced filters for precise member management:
+:::info Filter Strategy
+Use combination filters to create targeted member lists. For example: "Payment Failed" + "Membership Level: Premium" to focus on high-value members needing billing attention.
+:::
 
-- **Payment Failed** – Finds users with failed payment attempts in their renewal records.
-- **Paused Subscriptions** – Filters users with actively paused subscriptions.
-- **Cash User** – Shows only manually managed members.
-- **Inactive** – Users whose account is deactivated.
-- **Signed All** – Only members who have signed all required agreements.
-- **Missing Agreements** – Members missing one or more agreement signatures.
-- **Team Athlete** – Filters team-based users.
-- **Membership Level** – Select dropdown to show only users in specific memberships.
-- **Renewal Date Range** – Filter members by upcoming, current, or past renewal dates for proactive billing and retention management.
-- **Renewal Status** – Filter members by `failed`, `paused`, or `good` renewal status for quick attention on failed or paused accounts.
+### 🚨 Status Filters
+- **💳 Payment Failed** – Members with failed payment attempts
+- **⏸️ Paused Subscriptions** – Currently paused subscriptions  
+- **💵 Cash User** – Manually managed members
+- **❌ Inactive** – Deactivated accounts
+- **📝 Missing Agreements** – Unsigned required documents
+- **⚽ Team Athlete** – Team-based member filter
+- **⏳ Pending Approval** – Members awaiting approval for membership levels that require it
 
----
-
-## 🧰 Bulk Actions
-
-Admins can apply changes to multiple selected members at once using the bulk actions menu. Bulk actions only appear after selecting checkboxes next to member names.
-
-![Checkboxes](/img/bulk2.png)
-![Bulk action buttons](/img/bulk1.png)
-
-### 🏷 Mark as Athlete
-Sets the `is_athlete` flag to `true` for selected members for team tagging.
-
-### ❌ Unmark as Athlete
-Clears the `is_athlete` flag for selected members.
-
-### ✅ Mark as Active
-Sets the `active` flag to `true` to re-enable accounts.
-
-### 🚫 Mark as Inactive
-Sets the `active` flag to `false` to pause accounts without deleting them.
+### 📊 Advanced Filters
+- **👤 Role** – Filter by member role
+- **🏷️ Membership Level** – Filter by specific membership tiers
+- **📅 Renewal Date Range** – Target upcoming, current, or past renewals
+- **🔄 Renewal Status** – Focus on `failed`, `paused`, or `good` statuses
+- **✅ Signed All** – Members with complete agreement status
 
 ---
 
-## ✅ Table Actions
+## ⚡ Bulk Actions
 
-### 🟩 Check In
-Manually check in a member to a class, selecting from the member or bundled sub-members, with optional class assignment.
+> **Pro Tip:** Select multiple members using checkboxes to perform batch operations efficiently.
 
-### 🛠 Manage (Edit)
-Slide-over form for updating member data, with embedded management tools:
+![Bulk Selection](/img/bulk2.png)
 
-- **Name, Email, Profile Picture**
-- **Membership Level**
-- **Active / Team Athlete toggles**
-- Embedded management sections:
-  - **Member Notes**
-  - **Audit Log**
-  - **Manage Subscriptions**:
-    - View, add, or end subscriptions
-    - Attach recurring add-ons like lockers or towels
-    - Trigger prorated charges immediately upon add-on
-    - Remove recurring items when needed
-  - **Manage Accounts**:
-    - Sub-Accounts (with login)
-    - Bundle Accounts (without login)
-  - **Agreements** (view/sign)
-  - **Texts** (view history)
-  - **Emails** (view and send)
-  - **Invoices** (pay, view, mark paid)
-  - **Payment Methods** (view, add, set default)
-  - **Contact Information** (phone, address)
-  - **Check Ins** (history)
-  - **Transactions** (view, refund)
+### Available Bulk Operations
+
+| Action | Description | Use Case |
+|--------|-------------|----------|
+| 🏷️ **Mark as Athlete** | Set `is_athlete` flag to `true` | Team member tagging |
+| ❌ **Unmark as Athlete** | Clear athlete designation | Remove team status |
+| ✅ **Mark as Active** | Reactivate suspended accounts | Bulk account restoration |
+| 🚫 **Mark as Inactive** | Suspend accounts (non-destructive) | Temporary deactivation |
+
+![Bulk Actions Menu](/img/bulk1.png)
 
 ---
 
-## 🗓 Understanding Renewal Date and Renewal Status
+## 🛠️ Member Profile Management
 
-- **Renewal Date**:
-  - Shows the next billing date if the subscription is active.
-  - If a payment has failed, shows the **last billing date that succeeded** for clarity in retention and collections workflows.
-  - Helps identify upcoming renewals or overdue follow-ups.
+### 🎯 Quick Actions
 
-- **Renewal Status**:
-  - `good`: Member is active and current.
-  - `paused`: Subscription is paused; the member is not currently billed.
-  - `failed`: Payment has failed; member requires attention for billing or collection.
-  - Enables clear filtering and prioritization of failed/paused members.
+#### 🟩 Manual Check-In
+- Select member or bundled sub-members
+- Assign to specific classes
+- Track attendance history
+- Apply quota usage automatically
 
----
-
-### ➕ Header Actions
-
-Visible only to paid plans:
-
-- **Register Cash Member**: For manual entry of non-subscription members.
-- **Collect Cash**: For manual cash payments and transaction tracking.
+#### ⚙️ Comprehensive Edit Panel
+Access the full member management interface with organized sections:
 
 ---
 
-This updated help ensures **staff understand and leverage your renewal tracking workflow**, reducing confusion and improving actionable follow-up with members.
+## 💳 Subscription & Billing Management
+
+### 📊 Subscription Overview
+- **Current Subscriptions** - Active membership tiers and billing cycles
+- **Subscription Items** - Add-ons like lockers, towels, personal training
+- **Billing History** - Complete payment and invoice timeline
+
+### ➕ Adding Subscriptions
+1. **Select Membership Level** from available tiers
+2. **Choose Pricing** - Full price or half-off discounts
+3. **Quota Assignment** - Direct quota to main or child accounts
+4. **Immediate Billing** - Prorated charges processed instantly
+
+### 🔧 Subscription Modifications
+- **Add Items** - Attach recurring services with prorated billing
+- **Remove Items** - Cancel add-ons with immediate adjustment
+- **Pause/Resume** - Temporary subscription holds
+- **Cancel** - With or without penalty fees
+
+---
+
+## 💰 Credit Balance Management
+
+:::warning Important
+All credit transactions are automatically logged for audit purposes.
+:::
+
+### 💡 Credit System Overview
+The credit system allows you to:
+- Add prepaid credits to member accounts
+- Apply credits automatically to future invoices
+- Track credit usage and balance history
+- Provide customer service flexibility
+
+### 📈 Current Balance Display
+- **Positive Balance** - Shows available credit amount in green
+- **Zero Balance** - Indicates no credits available
+- **Real-time Updates** - Balance refreshes after each transaction
+
+### ➕ Adding Credits
+
+- **Amount Range:** $0.01 - $10,000.00
+- **Common Uses:** Admin-added credits, refunds, promotional credits
+
+#### Credit Addition Process:
+1. **Enter Amount** - Specify dollar amount (minimum $0.01)
+2. **Confirm** - Verify the credit purpose and amount
+3. **Applied Immediately** - Credit is added to the member's balance right away
+
+### 📊 Credit Usage
+- **Automatic Application** - Credits used for future invoices
+- **Priority Billing** - Credits applied before payment methods
+- **Transparent Tracking** - All usage logged in transaction history
+
+---
+
+## 👥 Account Relationships
+
+### 👨‍👩‍👧‍👦 Sub-Accounts (With Login Access)
+Perfect for family members who need independent portal access:
+
+- **Individual Logins** - Separate credentials for each family member
+- **Shared Benefits** - Access to primary account's membership benefits
+- **Independent Profiles** - Personal check-in history and preferences
+- **Email Management** - Automatic welcome emails with password reset links
+
+#### Creating New Sub-Accounts:
+1. **Name & Email** - Required contact information
+2. **Relationship** - Define family connection (spouse, child, etc.)
+3. **Automatic Setup** - System generates secure login credentials
+4. **Welcome Email** - Password reset link sent automatically
+
+#### Linking Existing Members as Sub-Accounts:
+Link existing members to create family account relationships while preserving their login credentials and history:
+
+- **Search Existing Members** - Type name or email to find members
+- **Preserve History** - Maintains check-in records, agreements, and account data
+- **Automatic Membership Sync** - Sub-account inherits parent's membership level
+- **Flexible Relationships** - Optionally define relationship type (spouse, child, etc.)
+- **Instant Connection** - Link takes effect immediately
+
+**Linking Process:**
+1. **Search Bar** - Enter member name or email (minimum 2 characters)
+2. **Select Member** - Choose from filtered results (max 10 shown)
+3. **Define Relationship** - Optionally specify connection type
+4. **Confirm Link** - Member becomes sub-account with preserved login
+
+**Requirements & Restrictions:**
+- Target member must not already have a parent account
+- Target member must be in the same portal
+- Member cannot link to themselves
+- Existing member cannot be re-linked if already a sub-account
+
+:::info Linking vs Creating
+**Link Existing Members** when they already have an account with history you want to preserve. **Create New Sub-Accounts** for family members who don't have existing accounts.
+:::
+
+### 📦 Bundle Accounts (Name-Only Access)
+Ideal for tracking multiple members under one billing account:
+
+- **No Login Required** - Simple name-based tracking
+- **Membership Assignment** - Each bundle member can have different membership levels
+- **Shared Billing** - All members bill to primary account
+- **Easy Management** - Add/remove bundle members instantly
+
+#### Bundle Member Management:
+1. **Add Members** - Name and membership level selection
+2. **Flexible Levels** - Different membership tiers per bundle member
+3. **Instant Updates** - Changes take effect immediately
+4. **Agreement Tracking** - Separate agreement requirements per member
+
+:::tip Account Type Selection
+- Choose **Sub-Accounts** when family members need app access and individual profiles
+- Choose **Bundle Accounts** for simple name tracking without login complexity
+:::
+
+---
+
+## 📄 Agreement & Document Management
+
+### 📋 Agreement Types
+- **Membership Agreements** - Standard terms and conditions
+- **Liability Waivers** - Required safety documentation  
+- **Bundle Agreements** - Separate documents for bundle members
+- **Custom Forms** - Facility-specific requirements
+
+### ✅ Completion Tracking
+- **Signed Status** - Green checkmarks for completed agreements
+- **Missing Documents** - Red alerts for outstanding requirements
+- **Bundle Tracking** - Individual agreement status for each bundle member
+- **Date Stamps** - Complete signature timeline
+
+### 🖊️ Digital Signing
+- **One-Click Access** - Direct links to signing interface
+- **Multi-Party Support** - Handle bundle member signatures
+- **PDF Generation** - Automatic document creation and storage
+- **History** - Complete signing history with timestamps
+
+---
+
+## 💬 Communication Center
+
+### 📧 Email Management
+- **Send Individual Emails** - Direct member communication
+- **Email History** - Complete conversation timeline
+- **Template System** - Pre-built message templates
+- **Delivery Tracking** - Confirmation of email receipt
+
+### 📱 SMS Messaging
+- **Text Message History** - Complete SMS conversation log
+- **Automated Messages** - System-generated notifications
+- **Two-Way Communication** - Handle member replies
+- **Opt-Out Management** - Respect communication preferences
+
+---
+
+## 💰 Financial Management
+
+### 🧾 Invoice System
+- **Generate Invoices** - Create custom billing statements
+- **Payment Processing** - Accept online payments
+- **Manual Payments** - Record cash/check transactions
+- **Refund Processing** - Handle payment reversals
+
+### 💳 Payment Methods
+- **Credit Card Management** - Add, update, delete payment methods
+- **Default Payment** - Set primary billing method
+- **Secure Processing** - Payment data is handled securely
+- **Payment History** - Complete transaction timeline
+
+### 📊 Transaction History
+- **Complete Records** - All payments, refunds, and credits
+- **Searchable History** - Filter by date, amount, or type
+- **Export Capabilities** - Download transaction reports
+- **Audit Compliance** - Detailed financial tracking
+
+---
+
+## 📈 Analytics & Reporting
+
+### 🔄 Renewal Management
+Understanding renewal timing is crucial for retention:
+
+#### **Renewal Date Logic:**
+- **Active Subscriptions** → Next scheduled billing date
+- **Failed Payments** → Last successful payment date
+- **Paused Subscriptions** → Date when pause ends
+
+#### **Renewal Status Categories:**
+- 🟢 **Good** - Active and current with successful payments
+- 🟡 **Paused** - Temporarily suspended, not currently billing
+- 🔴 **Failed** - Payment issues requiring immediate attention
+
+### 📊 Check-In Analytics
+- **Attendance Tracking** - Complete visit history
+- **Class Preferences** - Most attended class types
+- **Usage Patterns** - Peak usage times and frequency
+- **Quota Management** - Remaining visits and expiration dates
+
+---
+
+## ⚡ Header Actions
+
+:::note Plan Restrictions
+Some features are available only on paid plans. Upgrade to access full functionality.
+:::
+
+### 💵 Cash Member Registration
+For walk-in members or those preferring offline payment:
+- **Manual Entry** - Bypass online registration process
+- **Flexible Terms** - Custom membership durations
+- **Immediate Access** - Instant account activation
+- **Payment Tracking** - Record offline payments
+
+### 💰 Collect Cash Payments
+Streamlined cash transaction recording:
+- **Quick Entry** - Fast payment processing
+- **Receipt Generation** - Automatic payment confirmations
+- **Tax Handling** - Proper tax calculation and reporting
+- **Balance Updates** - Immediate account credit application
+
+---
+
+## 🚀 Best Practices
+
+### 🎯 Workflow Optimization
+1. **Daily Review** - Check failed payments and renewal alerts
+2. **Weekly Cleanup** - Process pending agreements and inactive accounts
+3. **Monthly Analysis** - Review renewal trends and member retention
+4. **Quarterly Planning** - Analyze membership level performance
+
+### 📋 Member Retention Strategies
+- **Proactive Communication** - Contact members before payment failures
+- **Flexible Options** - Offer pauses instead of cancellations
+- **Credit Incentives** - Use credit system for customer service wins
+- **Agreement Compliance** - Ensure all legal requirements are met
+
+### 🔧 System Maintenance
+- **Regular Backups** - Protect member data with frequent backups
+- **Security Updates** - Keep payment systems current and secure
+- **Performance Monitoring** - Track system response times and uptime
+- **Staff Training** - Ensure team understands all features and workflows
+
+---
+
+:::success Need Help?
+Visit our [Help Center](https://help.managememberships.com/docs/membership/members) for detailed guides on sub-accounts vs bundle accounts, or contact support for personalized assistance.
+:::

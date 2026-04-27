@@ -57,5 +57,5 @@ You can also place a QR scanner at your **self-check-in kiosk**, allowing member
 | **Background Color** | The primary color of the card background.        |
 | **Display Name**     | The name or label shown on the card (e.g. Gym Name). |
 | **Logo**             | Your business logo. Recommended 1:1 aspect ratio. |
-| **Footer Image**     | Optional image shown at the bottom of the card.  |
+| **Footer**           | Optional image shown at the bottom of the card.  |
 

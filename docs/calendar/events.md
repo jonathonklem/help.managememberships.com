@@ -22,7 +22,32 @@ You can sort or search to find a specific event or upcoming dates.
 
 ---
 
-## ➕ Registering for an Event
+## Creating an Event
+
+Click **"New"** to open the event creation form. The following fields are available:
+
+- **Name** - The event title
+- **Slug** - URL-friendly identifier (auto-generated from name)
+- **Picture** - Upload an event image
+- **Description** - Rich text description of the event
+- **Max Participants** - Limit on total registrations
+- **Start Date** / **End Date** - The event date range
+- **Start Time** / **End Time** - The event time window
+- **Emails to Notify** - Comma-separated email addresses notified on registration
+- **Agreements** - Required waivers that must be signed before registration
+- **Questions** - Custom questions asked during registration (can be marked as required)
+- **Price Options** - One or more ticket types, each with:
+  - **Name** (e.g., "General Admission", "VIP")
+  - **Price**
+  - **External Link** (optional, for tickets handled on another platform)
+  - **Eligible Membership Levels** - Restrict ticket availability by membership
+  - **Membership Discounts** - Percentage discounts for specific levels
+- **Hide from Calendar** - Keep the event private/unlisted
+- **Public Link** - Direct URL to the event's registration page (shown after saving)
+
+---
+
+## Registering for an Event
 
 Click on the event you want to attend to view its details.
 
@@ -83,12 +108,3 @@ If you use the external registration button, complete your signup on the linked 
 - Use your account to track all your upcoming events in one place.
 - Look for the **external registration button** when needed and follow the instructions provided.
 
----
-
-This ensures your users understand:
-
-- The difference between internal and external registration.
-- How payment, waivers, and tickets work.
-- What to expect when clicking the external registration button.
-
-Let me know if you want a matching callout banner or a “common questions” section for this page next for your docs consistency.

@@ -19,7 +19,7 @@ The **Class Calendar** report allows owners and administrators to see upcoming c
 
 3. **Navigate the Calendar**
    - Use the arrow buttons to move between months or weeks (depending on your view setting).
-   - You can switch between **Month** and **Week** views using the calendar toolbar.
+   - You can switch between **Month**, **Week**, **Day**, and **List** views using the calendar toolbar.
 
 4. **View Events**
    - Each class session appears as an event on the calendar, showing the class name and start time.

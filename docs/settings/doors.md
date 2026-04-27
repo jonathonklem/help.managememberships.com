@@ -15,7 +15,7 @@ When we install the access control hardware on your doors, we also help configur
 - **Name** (e.g. “Main Entrance” or “Back Gym Door”)
 - **Description** (optional notes)
 - **Access Schedule** – specific open/close times or set to "All Hours"
-- **Linked Membership Levels** – restrict which members are allowed to access which doors
+- **Membership Levels** – restrict which members are allowed to access which doors
 
 > 📝 After installation, you can rename, edit, or remove doors as needed.
 

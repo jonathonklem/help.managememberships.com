@@ -32,6 +32,7 @@ Click **Create** to open the blog post editor. The following fields are availabl
 | **Image**     | Optional featured image (uploaded and stored per subdomain).               |
 | **Content**   | Rich text content editor with support for images and file attachments.     |
 | **Member Only** | If enabled, post will only show to logged-in members.                    |
+| **Tags**      | Categorize your post with existing tags or create new ones.                |
 | **Published** | Controls whether the post is publicly visible.                             |
 
 ---

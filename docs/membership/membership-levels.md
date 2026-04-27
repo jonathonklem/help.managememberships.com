@@ -10,14 +10,14 @@ The **Membership Levels** section allows you to define the different types of su
 
 ## 📊 Overview Table
 
-The table shows all membership levels for your subdomain. Columns include:
+The table shows all membership levels for your business. Columns include:
 
 | Column            | Description |
 |-------------------|-------------|
 | **Name**          | The name of the membership level (e.g., "Monthly", "Family Pass"). |
 | **Price**         | The cost of the membership, formatted as a dollar amount (e.g., `$29.99`). |
 | **Billing Interval** | How often the membership renews (e.g., `monthly`, `yearly`). |
-| **Active**        | A boolean toggle indicating whether the membership is currently active or hidden from public view. |
+| **Active**        | A toggle indicating whether the membership is currently active or hidden from public view. |
 
 ---
 
@@ -36,7 +36,7 @@ Click the **edit icon** on any row to open a slide-over form where you can updat
 - Name
 - Price
 - Billing interval
-- Other fields defined in the `MembershipForm::schema()`
+- Other fields described below
 
 ---
 
@@ -89,6 +89,11 @@ Membership levels define the structure of your offerings, including pricing, bil
 
 #### **Signup Fee**
 - One-time fee charged in addition to the base price during initial signup.
+
+---
+
+#### **Description**
+- Rich text description of the membership level. Shown to prospective members during registration.
 
 ---
 
@@ -148,6 +153,15 @@ Membership levels define the structure of your offerings, including pricing, bil
 
 ---
 
+### 🔒 Approval Options
+
+#### **Requires Approval**
+- When enabled, new members must be approved by an owner/manager before payment is collected. Members will see the price but won't enter payment info until approved.
+- **Note:** Approval-only memberships do not support multi-member or bundled signups. Those options are automatically disabled when Requires Approval is on.
+- Only available for paid (non-free) memberships.
+
+---
+
 ### 👀 Visibility Options
 
 #### **Publicly Visible**
@@ -168,6 +182,10 @@ Membership levels define the structure of your offerings, including pricing, bil
 - Adds these fields:
   - **Minimum Additional Members** – Minimum number of extra members.
   - **Maximum Additional Members** – Cap on how many can be added.
+
+#### **Flat Rate Pricing**
+- Only visible when **Multi-Member** is enabled.
+- When enabled, the price is the total group cost (not per-person) regardless of how many members are in the group.
 
 #### **Allow Bundles**
 - Enables bundling this membership with other levels.

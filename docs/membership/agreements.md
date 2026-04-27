@@ -20,7 +20,7 @@ To create a new agreement:
 2. In the form that appears:
    - **Name**: Provide a clear, descriptive name (e.g., `Adult Waiver`, `Parental Consent Form`).
    - **Body**: Use the rich text editor to enter the full text of the agreement. You can format text, add links, and upload attachments.
-   - **Membership Levels**: Select one or more membership levels that this agreement applies to.
+   - **Associated Membership Levels**: Select one or more membership levels that this agreement applies to.
 
 > ✅ Members in the selected levels will be required to sign this agreement during registration or check-in.
 

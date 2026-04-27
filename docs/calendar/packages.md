@@ -30,6 +30,15 @@ Click the **"Create"** button to open a slide-out form panel.
 #### **Name**
 - A unique label that describes the package (e.g., "Weekend Wellness Pass").
 
+#### **Slug**
+- URL-friendly identifier for the package. Auto-generated from the name but can be customized.
+
+#### **Price**
+- The cost of the package.
+
+#### **Description**
+- Rich text description of what the package includes and any relevant details.
+
 #### **Start & End Time**
 - The time window each day when the package can be redeemed.
 
